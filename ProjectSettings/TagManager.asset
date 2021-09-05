@@ -18,6 +18,7 @@ TagManager:
   - light4
   - Room
   - Planes
+  - FanCylinder
   layers:
   - Default
   - TransparentFX
@@ -27,9 +28,9 @@ TagManager:
   - UI
   - 
   - 
-  - walls
-  - earth
-  - cubeLayer
+  - Gound
+  - FirstFloor
+  - 
   - 
   - 
   - 

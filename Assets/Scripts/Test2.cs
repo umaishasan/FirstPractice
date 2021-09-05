@@ -3,7 +3,10 @@
 public class Test2 : MonoBehaviour
 {
     private float speed = 10f;
-
+    public Rigidbody rigidbody;
+    private float moveX;
+    private float moveY;
+    
     void OnEnable()
     {
         Debug.Log("OnEnable called");
@@ -22,6 +25,8 @@ public class Test2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rigidbody = gameObject.GetComponent<Rigidbody>();
+        rigidbody.useGravity = false;
         Debug.Log("Start called");
     }
 
@@ -34,6 +39,7 @@ public class Test2 : MonoBehaviour
     void Update()
     {
         this.objectMovingWithDT();
+        /*this.shortKut();*/
         /*this.objectMovingWithSimple();*/
     }
 
@@ -75,6 +81,7 @@ public class Test2 : MonoBehaviour
 
     void objectMovingWithDT()
     {
+/*        rb.velocity = new Vector3(0f, 1f, 0f);*/
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(new Vector3(-10f, 0f, 0f) * Time.deltaTime);
@@ -121,4 +128,12 @@ public class Test2 : MonoBehaviour
         }
     }
 
+    /*void shortKut()
+    {
+        if (Input.GetAxis("Horizontal"))
+        {
+            transform.Translate(new Vector3(moveX,0,0));
+        }
+    }*/
+    
 }
