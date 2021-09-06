@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForCube2 : MonoBehaviour
+public class TransformRotate : MonoBehaviour
 {
 
     private void Awake()
@@ -14,12 +14,12 @@ public class ForCube2 : MonoBehaviour
     void Start()
     {
         Debug.Log("Start method call");
+        gameObject.active = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*transform.Translate(Vector3.forward*2* Time.deltaTime);*/
         /*transform.Rotate(Vector3.forward * 2);*/
         /*transform.Rotate(Vector3.up * 2);*/
        /* transform.Rotate(Vector3.down * 2);*/

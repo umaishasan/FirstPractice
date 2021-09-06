@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
 
-public class Test2 : MonoBehaviour
+public class TranslatePosition : MonoBehaviour
 {
     private float speed = 10f;
     public Rigidbody rigidbody;
-    private float moveX;
-    private float moveY;
     
     void OnEnable()
     {
@@ -25,7 +23,7 @@ public class Test2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = gameObject.GetComponent<Rigidbody>();
+        /*rigidbody = gameObject.GetComponent<Rigidbody>();*/
         rigidbody.useGravity = false;
         Debug.Log("Start called");
     }
@@ -39,7 +37,6 @@ public class Test2 : MonoBehaviour
     void Update()
     {
         this.objectMovingWithDT();
-        /*this.shortKut();*/
         /*this.objectMovingWithSimple();*/
     }
 
@@ -127,13 +124,5 @@ public class Test2 : MonoBehaviour
             transform.Translate(Vector3.up * this.speed);
         }
     }
-
-    /*void shortKut()
-    {
-        if (Input.GetAxis("Horizontal"))
-        {
-            transform.Translate(new Vector3(moveX,0,0));
-        }
-    }*/
     
 }

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/Test.unity
+    path: Assets/Scene/Translate&Rotate.unity
     guid: 66cd64d4c7f11d440948ab04cf572ce6
+  - enabled: 1
+    path: Assets/Scene/MultiLevelFloor.unity
+    guid: f361dc4408025ae42b0272ce2375314c
   m_configObjects: {}
