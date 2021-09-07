@@ -11,4 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/MultiLevelFloor.unity
     guid: f361dc4408025ae42b0272ce2375314c
+  - enabled: 1
+    path: Assets/Scene/Room.unity
+    guid: b87b5dda151ea424099972efdbc4eedc
+  - enabled: 1
+    path: Assets/Scene/MultiFloorWithFan.unity
+    guid: 34665d98c615f1340a5cb61e4c215291
+  - enabled: 1
+    path: Assets/Scene/SwitchLight.unity
+    guid: e9bdb1738bc7b3949b132a9a0c7695fb
+  - enabled: 1
+    path: Assets/Scene/ScenesLoadForAdditive.unity
+    guid: 84939d914f3aa594bba32c1ea6d7c4f1
+  - enabled: 1
+    path: Assets/Scene/MultiObjInList.unity
+    guid: a100b64ed8ef4b04685859c369830522
+  - enabled: 1
+    path: Assets/Scene/MultiCamAtaTime.unity
+    guid: 6c57b55dce4f59442a53255e72b0719b
   m_configObjects: {}

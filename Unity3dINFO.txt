@@ -6,7 +6,6 @@ Most Important Points:
 	Mesh makeup a large part of your 3D world.unity provides a modeling tool called proBuilder & there are 
 also some assets store modeling plugins,such as Mesh Deformer,UModeler,Mesh Editor.
 
-
 2) Mesh Filter:
 ===============
 	Mesh filter takes a meshes from your assets and pass it to "Mesh Render" for rendering on the screen.
@@ -70,7 +69,8 @@ Detail Example: suppose, we use fps = 20,
 			Vector3.forward = 1,		
 			DT is approximately erqualto 1/fps so,DT=0.05 (Here)
 	totalMovement = fps*Vector3.forward*speed*DT = 10 Ans.
-	* "Space.World" is the parameter which is used to say to move the object global/scene/world axis, not for self/local axis.
+	* "Space.World" is the parameter which is used to say to move the object global/scene/world axis, 
+	not for self/local axis.
 	* "Space.Self" is the parameter which is used to say to move the object local axis, not for world axis.
 
 14) Writing method of Vector:
@@ -82,7 +82,40 @@ Detail Example: suppose, we use fps = 20,
 ==========
 	box collider or structures gizmo
 
-16) Scene loading/Additive loading:
+16) Scene Manager/Load scene/LoadSceneMode:
+===========================================
+	* scene management at run time.
+	* load the scene by its name or index which is defined in build setting.
+	* Used when loading a Scene in a player.Use LoadSceneMode to choose what type of Scene loads when using 
+	SceneManager.LoadScene. The available modes are Single and Additive.
+
+17) Scene loading/Additive loading:
 ===================================
-	Adds the Scene to the current loaded Scenes is called Additive means 
-	
+	* Adds the Scene to the current loaded Scenes is called Additive.
+	* Closes all current loaded Scenes and loads a Scene.
+
+18) List and Dictionary:
+========================
+	* A Dictionary is similar to a List. However, instead of accessing a certain element by index value, 
+	we use a string called key.
+	* A list is an object which holds variables in a specific order. The type of variable that the list can 
+	store is defined using the generic syntax.
+
+19) Delegate:
+=============
+	There are 2 type of delegate "single delegate" and multicast delegate".A Delegate is a reference pointer 
+	to a method. It allows us to treat method as a variable and pass method as a variable for a callback.When 
+	it get called ,it notifies all methods that reference the delegate.
+single: It can reference to only single method at a time which represent (=). 
+multicast: It can store the reference of multiple methods at a time which represent (+=).
+	How to use:
+	-----------
+	> //delegate define;
+    	 delegate void myDelegate(int num);
+    	 myDelegate myDelegated;
+	> //single delegate
+         myDelegated = printNum;
+        > //calling delegate
+         myDelegated(5);
+	> // create method
+	 void printNum(int num){ print("print num: " + num); }

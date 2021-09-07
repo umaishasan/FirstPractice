@@ -19,6 +19,8 @@ TagManager:
   - Room
   - Planes
   - FanCylinder
+  - cam1
+  - cam2
   layers:
   - Default
   - TransparentFX
