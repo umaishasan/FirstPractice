@@ -14,7 +14,7 @@ public class TransformRotate : MonoBehaviour
     void Start()
     {
         Debug.Log("Start method call");
-        gameObject.active = false;
+        gameObject.active = true;
     }
 
     // Update is called once per frame
