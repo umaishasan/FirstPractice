@@ -9,6 +9,12 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Application Closed");
     }
 
+    public void ExitObjectss(GameObject gameObjj)
+    {
+        gameObjj.SetActive(false);
+        Debug.Log("object Closed");
+    }
+
     public void Room()
     {
         Debug.Log("Room Application Open");

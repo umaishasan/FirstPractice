@@ -6,19 +6,20 @@ public class SwitchForLightBlue : MonoBehaviour
 {
     public Light light;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    private void OnMouseDown()
-    {
-        switchLight();
-    }
-
-    void switchLight()
+    void OnMouseDown()
     {
         light.color = Color.blue;
+    }
+
+    void OnMouseOver()
+    {
+        gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+        Debug.Log("blue light hovered");
+    }
+
+    void OnMouseExit()
+    {
+        gameObject.GetComponent<Renderer>().material.color = Color.blue;
+        Debug.Log("blue light un-hovered");
     }
 }

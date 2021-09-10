@@ -6,19 +6,20 @@ public class SwitchForLightRed : MonoBehaviour
 {
     public Light light;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    private void OnMouseDown()
-    {
-        switchLight();
-    }
-
-    void switchLight()
+    void OnMouseDown()
     {
         light.color = Color.red;
+    }
+
+    void OnMouseOver()
+    {
+        gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+        Debug.Log("Red light hovered");
+    }
+
+    void OnMouseExit()
+    {
+        gameObject.GetComponent<Renderer>().material.color = Color.red;
+        Debug.Log("Red light un-hovered");
     }
 }
