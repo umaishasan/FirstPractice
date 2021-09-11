@@ -6,26 +6,21 @@ public class SwitchForfan : MonoBehaviour
 {
     public FanRotate fanrotate;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnMouseDown()
     {
-        
+        if(fanrotate.enabled == false)
+        {
+            fanrotate.enabled = true;
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
+        }
+        else
+        {
+            fanrotate.enabled = false;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnMouseExit()
     {
-        
+        gameObject.GetComponent<Renderer>().material.color = Color.white;   
     }
-
-    private void OnMouseDown()
-    {   
-        fanrotate.enabled = true;
-    }
-
-    private void OnMouseUpAsButton()
-    {
-        fanrotate.enabled = false;
-    }
-
 }

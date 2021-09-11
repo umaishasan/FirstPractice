@@ -3,13 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoadingAdditive : MonoBehaviour
 {
-    void Update()
+    void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            LoadNextScene();
-            Destroy(this);
-        }
+        LoadNextScene();
+        Destroy(this);
     }
 
     void LoadNextScene()

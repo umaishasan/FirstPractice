@@ -64,7 +64,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\cameraFollow.cs" />
+    <Compile Include="Assets\AwesomeCartoonPlanes\Scripts\Plane.cs" />
+    <Compile Include="Assets\Scripts\BallRotates.cs" />
     <Compile Include="Assets\Scripts\FanRotate.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MultiObjList.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\Scripts\PlayerHandling2.cs" />
     <Compile Include="Assets\Scripts\SceneLoadingAdditive.cs" />
     <Compile Include="Assets\Scripts\SceneLoadingSingle.cs" />
+    <Compile Include="Assets\Scripts\SwitchesForLight.cs" />
     <Compile Include="Assets\Scripts\SwitchForfan.cs" />
     <Compile Include="Assets\Scripts\SwitchForLightBlue.cs" />
     <Compile Include="Assets\Scripts\SwitchForLightGreen.cs" />

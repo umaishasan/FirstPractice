@@ -20,10 +20,10 @@ public class TransformRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*transform.Rotate(Vector3.forward * 2);*/
-        /*transform.Rotate(Vector3.up * 2);*/
-       /* transform.Rotate(Vector3.down * 2);*/
-        transform.Rotate(Vector3.back * 2);
+        // transform.Rotate(Vector3.forward * 2);
+        // transform.Rotate(Vector3.up * 2);
+        // transform.Rotate(Vector3.down * 2);
+         transform.Rotate(Vector3.back * 2);
         Debug.Log("Update method call");
     }
 }
