@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class BallRotates : MonoBehaviour
 {
-    public GameObject ball;
-    public GameObject cameraa;
     public bool stopBalling;
-    public Vector3 movTopos;
-    private float speed = 0.6f;
+    public CameraFollow cf;
 
     void Update()
     {
@@ -20,30 +17,22 @@ public class BallRotates : MonoBehaviour
 
     void OnMouseDown()
     {
-        movTopos = ball.transform.localPosition;
         stopBalling = false;
-        movementSlowly();
-        Debug.Log(ball.transform.localPosition+"ball stop");
-
-        //StartCoroutine(cameraFocusing());
+        Debug.Log("ball stop");
+        gameObject.GetComponent<CameraFollow>().enabled = true;
+        Debug.Log("Script call");
     }
 
     void ballRoatating()
     {
-        ball.transform.Rotate(new Vector3(0, 2, 0) * 2);
+        gameObject.transform.Rotate(new Vector3(0, 2, 0) * 2);
         Debug.Log("ball rotate");
     }
 
-    void movementSlowly()
+    /*IEnumerator cameraFocusing()
     {
-        float stepss = speed*Time.deltaTime;
-        cameraa.transform.position = Vector3.Lerp(cameraa.transform.position, movTopos, stepss);
-    }
-
-    /*    IEnumerator cameraFocusing()
-        {
-            yield return new WaitUntil(()=>Input.GetMouseButtonDown(0));
-            movementSlowly();
-            Debug.Log("Camera Focusing");
-        }*/
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(1));
+        movementSlowly();
+        Debug.Log("Camera Focusing");
+    }*/
 }

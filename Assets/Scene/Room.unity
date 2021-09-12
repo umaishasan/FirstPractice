@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.49299932, g: 0.5505598, b: 0.5895232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4929964, g: 0.55053455, b: 0.5895575, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 184646177}
   - component: {fileID: 184646176}
   - component: {fileID: 184646179}
+  - component: {fileID: 184646180}
   m_Layer: 0
   m_Name: b1
   m_TagString: Untagged
@@ -321,9 +322,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a010ba5e88228f247913ce93df507a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopBalling: 1
+  cf: {fileID: 0}
+--- !u!114 &184646180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184646174}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b34b9cfabdd6f64a8155f1763ef4d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   ball: {fileID: 184646174}
   cameraa: {fileID: 2060483252}
-  stopBalling: 1
+  movTopos: {x: 0, y: 0, z: 0}
 --- !u!1 &1362750514
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +388,7 @@ GameObject:
   - component: {fileID: 1390495901}
   - component: {fileID: 1390495900}
   - component: {fileID: 1390495903}
+  - component: {fileID: 1390495904}
   m_Layer: 0
   m_Name: b6
   m_TagString: Untagged
@@ -464,9 +480,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a010ba5e88228f247913ce93df507a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopBalling: 1
+  cf: {fileID: 0}
+--- !u!114 &1390495904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390495898}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b34b9cfabdd6f64a8155f1763ef4d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   ball: {fileID: 1390495898}
   cameraa: {fileID: 2060483252}
-  stopBalling: 1
+  movTopos: {x: 0, y: 0, z: 0}
 --- !u!1 &1434817250
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +510,7 @@ GameObject:
   - component: {fileID: 1434817253}
   - component: {fileID: 1434817252}
   - component: {fileID: 1434817255}
+  - component: {fileID: 1434817256}
   m_Layer: 0
   m_Name: b3
   m_TagString: Untagged
@@ -571,9 +602,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a010ba5e88228f247913ce93df507a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopBalling: 1
+  cf: {fileID: 0}
+--- !u!114 &1434817256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434817250}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b34b9cfabdd6f64a8155f1763ef4d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   ball: {fileID: 1434817250}
   cameraa: {fileID: 2060483252}
-  stopBalling: 1
+  movTopos: {x: 0, y: 0, z: 0}
 --- !u!1001 &1438456318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -769,6 +814,7 @@ GameObject:
   - component: {fileID: 1686325468}
   - component: {fileID: 1686325467}
   - component: {fileID: 1686325470}
+  - component: {fileID: 1686325471}
   m_Layer: 0
   m_Name: b2
   m_TagString: Untagged
@@ -860,9 +906,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a010ba5e88228f247913ce93df507a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopBalling: 1
+  cf: {fileID: 0}
+--- !u!114 &1686325471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686325465}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b34b9cfabdd6f64a8155f1763ef4d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   ball: {fileID: 1686325465}
   cameraa: {fileID: 2060483252}
-  stopBalling: 1
+  movTopos: {x: 0, y: 0, z: 0}
 --- !u!1 &1686515290
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +1002,7 @@ GameObject:
   - component: {fileID: 1700969024}
   - component: {fileID: 1700969023}
   - component: {fileID: 1700969026}
+  - component: {fileID: 1700969027}
   m_Layer: 0
   m_Name: b5
   m_TagString: Untagged
@@ -1033,9 +1094,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a010ba5e88228f247913ce93df507a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopBalling: 1
+  cf: {fileID: 0}
+--- !u!114 &1700969027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700969021}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b34b9cfabdd6f64a8155f1763ef4d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   ball: {fileID: 1700969021}
   cameraa: {fileID: 2060483252}
-  stopBalling: 1
+  movTopos: {x: 0, y: 0, z: 0}
 --- !u!1 &1704288405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1465,7 @@ GameObject:
   - component: {fileID: 2058747216}
   - component: {fileID: 2058747215}
   - component: {fileID: 2058747218}
+  - component: {fileID: 2058747219}
   m_Layer: 0
   m_Name: b4
   m_TagString: Untagged
@@ -1481,9 +1557,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a010ba5e88228f247913ce93df507a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopBalling: 1
+  cf: {fileID: 0}
+--- !u!114 &2058747219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058747213}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b34b9cfabdd6f64a8155f1763ef4d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   ball: {fileID: 2058747213}
   cameraa: {fileID: 2060483252}
-  stopBalling: 1
+  movTopos: {x: 0, y: 0, z: 0}
 --- !u!1 &2060483252
 GameObject:
   m_ObjectHideFlags: 0
