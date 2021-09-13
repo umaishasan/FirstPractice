@@ -6,20 +6,29 @@ public class CameraFollow : MonoBehaviour
 {
     public GameObject ball;
     public GameObject cameraa;
-    public Vector3 movTopos;
-    private float speed = 0.6f;
+    BallRotates br = new BallRotates();
 
     void Update()
     {
-        movementSlowly();
+         movementSlowly();
+        // movementWithoutLerp();
     }
 
     public void movementSlowly()
     {
-        //movTopos = ball.transform.position;
-        movTopos = ball.transform.position;
-        float stepss = speed * Time.deltaTime;
-        cameraa.transform.localPosition = Vector3.Lerp(cameraa.transform.position, movTopos, stepss);
+        float timecover = (Time.time - br.startTime)/800;
+        float totalDistance = Vector3.Distance(cameraa.transform.position, ball.transform.position);
+        float distanceCover = timecover/ totalDistance;
+        cameraa.transform.position = Vector3.Lerp(cameraa.transform.position, ball.transform.position, distanceCover);
+        if (cameraa.transform.position == ball.transform.position)
+        {
+            Destroy(this);
+        }
+    }
+
+    void movementWithoutLerp()
+    {
+        cameraa.transform.position = ball.transform.position;
         Debug.Log("movement slowly method call");
     }
 }

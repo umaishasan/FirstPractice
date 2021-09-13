@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallRotates : MonoBehaviour
 {
     public bool stopBalling;
-    public CameraFollow cf;
+    public float startTime;
 
     void Update()
     {
@@ -18,21 +18,13 @@ public class BallRotates : MonoBehaviour
     void OnMouseDown()
     {
         stopBalling = false;
-        Debug.Log("ball stop");
         gameObject.GetComponent<CameraFollow>().enabled = true;
-        Debug.Log("Script call");
+        this.startTime = Time.timeScale = 2.30365f;
+        Debug.Log("time call from ball rotate class"+ startTime);
     }
 
     void ballRoatating()
     {
         gameObject.transform.Rotate(new Vector3(0, 2, 0) * 2);
-        Debug.Log("ball rotate");
     }
-
-    /*IEnumerator cameraFocusing()
-    {
-        yield return new WaitUntil(() => Input.GetMouseButtonDown(1));
-        movementSlowly();
-        Debug.Log("Camera Focusing");
-    }*/
 }
