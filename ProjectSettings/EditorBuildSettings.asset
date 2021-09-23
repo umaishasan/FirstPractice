@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/MainMenu.unity
+    path: Assets/Scene/SubMenu.unity
     guid: 934e7a5de44f13a439ba599d6bf40a90
   - enabled: 1
     path: Assets/Scene/Room.unity
@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/MultiCamAtaTime.unity
     guid: 6c57b55dce4f59442a53255e72b0719b
+  - enabled: 1
+    path: Assets/Scene/AboutUsDetail.unity
+    guid: 739f6cffc18847b429a7d4f3304b76d6
   m_configObjects: {}

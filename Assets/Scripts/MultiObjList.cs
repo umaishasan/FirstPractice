@@ -43,8 +43,9 @@ public class MultiObjList : MonoBehaviour
         for(int i = 0; i < glist.Count; i++)
         {
             glist[i].GetComponent<Renderer>().material.color = Color.red;
-            x = glist[i].transform.position.x+2;
+            glist[i].transform.position = new Vector3(transform.position.x+i*2, transform.position.y, transform.position.z);
         }
+
         /*GameObject.Find("Cube").GetComponent<Renderer>().material.color = Color.red;
         GameObject.Find("Cube").transform.position = new Vector3(2f,0f,0f);*/
     }
