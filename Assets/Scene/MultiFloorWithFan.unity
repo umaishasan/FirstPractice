@@ -595,8 +595,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -10}
-  m_SizeDelta: {x: 80, y: 20}
+  m_AnchoredPosition: {x: 135.6, y: -20.583}
+  m_SizeDelta: {x: 135.605, y: 41.16553}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &134291465
 MonoBehaviour:
@@ -639,7 +639,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 807707945}
-        m_MethodName: oneStepBack
+        m_MethodName: Floor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1379,7 +1379,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 807707944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54f79cfc1ab684640b651ef36c6dd028, type: 3}
+  m_Script: {fileID: 11500000, guid: ac44def01b9bd874abdc0825190d2efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &807707946

@@ -338,7 +338,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 184646174}
   cameraa: {fileID: 2060483252}
-  speed: 0.6
 --- !u!1 &1362750514
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,7 +481,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1390495898}
   cameraa: {fileID: 2060483252}
-  speed: 0.6
 --- !u!114 &1390495904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,7 +602,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1434817250}
   cameraa: {fileID: 2060483252}
-  speed: 0.6
 --- !u!114 &1434817256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,11 +623,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2053892201776727919, guid: eddcd385e99df614489110713d109e16,
-        type: 3}
-      propertyPath: m_Name
-      value: planes
-      objectReference: {fileID: 0}
     - target: {fileID: 2053892201776727904, guid: eddcd385e99df614489110713d109e16,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -685,6 +677,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2053892201776727919, guid: eddcd385e99df614489110713d109e16,
+        type: 3}
+      propertyPath: m_Name
+      value: planes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eddcd385e99df614489110713d109e16, type: 3}
@@ -759,7 +756,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 2060483254}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -798,7 +795,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546794207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54f79cfc1ab684640b651ef36c6dd028, type: 3}
+  m_Script: {fileID: 11500000, guid: ac44def01b9bd874abdc0825190d2efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1686325465
@@ -908,7 +905,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1686325465}
   cameraa: {fileID: 2060483252}
-  speed: 0.6
 --- !u!114 &1686325471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,7 +1092,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1700969021}
   cameraa: {fileID: 2060483252}
-  speed: 0.6
 --- !u!114 &1700969027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,7 +1133,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704288405}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1770647057}
@@ -1147,8 +1142,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -10}
-  m_SizeDelta: {x: 80, y: 20}
+  m_AnchoredPosition: {x: 135.59998, y: -20.450012}
+  m_SizeDelta: {x: 135.60504, y: 41.165527}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1704288407
 MonoBehaviour:
@@ -1191,7 +1186,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1546794212}
-        m_MethodName: backTomainMenu
+        m_MethodName: BackToSubmenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1201,8 +1196,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1704288408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,8 +1214,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1295,8 +1286,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -1326,11 +1315,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4906553082893605674, guid: 35ce01f7d15965346abfb2bc0397f48b,
-        type: 3}
-      propertyPath: m_Name
-      value: Room
-      objectReference: {fileID: 0}
     - target: {fileID: 4325923350791918406, guid: 35ce01f7d15965346abfb2bc0397f48b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1400,6 +1384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.8540841
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906553082893605674, guid: 35ce01f7d15965346abfb2bc0397f48b,
+        type: 3}
+      propertyPath: m_Name
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4906553082893605675, guid: 35ce01f7d15965346abfb2bc0397f48b,
         type: 3}
@@ -1565,7 +1554,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2058747213}
   cameraa: {fileID: 2060483252}
-  speed: 0.6
 --- !u!114 &2058747219
 MonoBehaviour:
   m_ObjectHideFlags: 0

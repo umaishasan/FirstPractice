@@ -1,45 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DropDownScript : MonoBehaviour
 {
     public Dropdown dropdown;
-    public GameObject proceedBtn;
+    public GameObject proceedBtnLight;
+    public GameObject proceedBtnMoveobj;
+    public GameObject proceedBtnGen;
 
     public void DropdownList()
     {
-        if(dropdown.value == 0)
+        if(dropdown.value == 1)
         {
-            proceedBtn.SetActive(true);
-            ProceedButton(0);
+            proceedBtnLight.SetActive(true);
         }
-        else if(dropdown.value == 1)
+        else if(dropdown.value == 2)
         {
-            proceedBtn.SetActive(true);
-            ProceedButton(1);
+            proceedBtnMoveobj.SetActive(true);
         }
-        else if (dropdown.value == 2)
+        else if (dropdown.value == 3)
         {
-            proceedBtn.SetActive(true);
-            ProceedButton(2);
+            proceedBtnGen.SetActive(true);
         }
     }
 
-    void ProceedButton(int indexNum)
+    //SCENES
+    public void List()
     {
-        if(indexNum == 0)
-        {
-
-        }
-        else if(indexNum == 1)
-        {
-
-        }
-        else if (indexNum == 2)
-        {
-
-        }
+        Debug.Log("List Application Open");
+        SceneManager.LoadScene("MultiObjInList", LoadSceneMode.Single);
+    }
+    public void Light()
+    {
+        Debug.Log("Light Application Open");
+        SceneManager.LoadScene("SwitchLight", LoadSceneMode.Single);
+    }
+    public void ObjectMove()
+    {
+        Debug.Log("ObjectMove Application Open");
+        SceneManager.LoadScene("Translate&Rotate", LoadSceneMode.Single);
     }
 }
