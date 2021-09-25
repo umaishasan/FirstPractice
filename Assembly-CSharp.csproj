@@ -65,18 +65,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AwesomeCartoonPlanes\Scripts\Plane.cs" />
+    <Compile Include="Assets\Scripts\ActionPlayer.cs" />
     <Compile Include="Assets\Scripts\BallRotates.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraFollow1.cs" />
     <Compile Include="Assets\Scripts\DropDownScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyPlayer.cs" />
     <Compile Include="Assets\Scripts\FanRotate.cs" />
+    <Compile Include="Assets\Scripts\GameOverScript.cs" />
+    <Compile Include="Assets\Scripts\HighScoreNameScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MultiObjList.cs" />
+    <Compile Include="Assets\Scripts\Player1.cs" />
     <Compile Include="Assets\Scripts\PlayerHandling1.cs" />
     <Compile Include="Assets\Scripts\PlayerHandling2.cs" />
     <Compile Include="Assets\Scripts\SceneLoadingAdditive.cs" />
     <Compile Include="Assets\Scripts\SceneLoadingSingle.cs" />
     <Compile Include="Assets\Scripts\SubMenu.cs" />
+    <Compile Include="Assets\Scripts\SwitchesCameras.cs" />
     <Compile Include="Assets\Scripts\SwitchesForLight.cs" />
     <Compile Include="Assets\Scripts\SwitchForfan.cs" />
     <Compile Include="Assets\Scripts\SwitchForLightBlue.cs" />
@@ -84,6 +90,7 @@
     <Compile Include="Assets\Scripts\SwitchForLightRed.cs" />
     <Compile Include="Assets\Scripts\TransformRotate.cs" />
     <Compile Include="Assets\Scripts\TranslatePosition.cs" />
+    <Compile Include="Assets\Scripts\UsernameScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

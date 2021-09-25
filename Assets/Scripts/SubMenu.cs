@@ -3,14 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SubMenu : MonoBehaviour
 {
-    //public GameObject panelSubmenu;
-
     //come back sub menu to main menu
-    /*public void SubmenuBackToMainmenu(GameObject objPanelExit)
-    {
-        Debug.Log("Room Application Open");
-        objPanelExit.SetActive(false);
-    }*/
     public void SubmenuBackToMainmenu()
     {
         Debug.Log("Room Application Open");
@@ -19,9 +12,10 @@ public class SubMenu : MonoBehaviour
     //every scene to back to sub menu(BACK BUTTON).
     public void BackToSubmenu()
     {
+    
         Debug.Log("Sub Menu Open");
-        //panelShow.SetActive(true);
         SceneManager.LoadScene("SubMenu", LoadSceneMode.Single);
+
     }
 
     //SCENES
@@ -41,7 +35,6 @@ public class SubMenu : MonoBehaviour
         SceneManager.LoadScene("MultiLevelFloor", LoadSceneMode.Single);
     }
     
-
     //Multifloor With fan then simple Multifloor. 
     public void OneStepBack()
     {
@@ -53,5 +46,11 @@ public class SubMenu : MonoBehaviour
     {
         gameExitObj.SetActive(false);
         Debug.Log("Option closed");
+    }
+
+    public void Gameplay()
+    {
+        SceneManager.LoadScene("GamePlayer", LoadSceneMode.Single);
+        Debug.Log("Game Player Open");
     }
 }

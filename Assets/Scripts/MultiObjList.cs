@@ -10,25 +10,28 @@ public class MultiObjList : MonoBehaviour
     public List<GameObject> glist = new List<GameObject>();
     public Dictionary<string, List<GameObject>> dlist = new Dictionary<string, List<GameObject>>();
     private int i = 0;
-    private float x;
-
-    void Start()
-    {
-
-    }
+    //Color[] myColors = { Color.red, Color.green, Color.blue, Color.white };
+    public GameObject[] myGameObj = { GameObject.Find("RedPlayer"), GameObject.Find("GreenPlayer"), GameObject.Find("BluePlayer"), GameObject.Find("WhitePlayer") };
 
     private void Update()
     {
         //multicast delegate
         myDelegated += showOutputinConsole;
-        myDelegated += ObjextMeterialChange;
+       // myDelegated += ObjextPositionChange;
+
+        //type space to generate cube
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            glist.Add(GameObject.CreatePrimitive(PrimitiveType.Cube));
-            dlist.Add("cube"+i, glist);
+            int myGameObjIndex = Random.Range(0, myGameObj.Length);
+            //glist.Add(Instantiate(myGameObj[myGameObjIndex]));
+            glist.Add(Instantiate(myGameObj[myGameObjIndex]));
+            glist[i].transform.localPosition = new Vector3(transform.position.x + i * 2, transform.position.y, transform.position.z);
+
+            //ObjextPositionChange();
+            dlist.Add("cube" + i, glist);
             myDelegated();
             i++;
-            Debug.Log(i+" "+dlist.GetType()+" "+dlist.ToString());
+            Debug.Log(i + " " + dlist.GetType() + " " + dlist.ToString());
         }
     }
 
@@ -38,15 +41,31 @@ public class MultiObjList : MonoBehaviour
         print("show output method call using delegate");
     }
 
-    void ObjextMeterialChange()
+    void ObjextPositionChange()
     {
-        for(int i = 0; i < glist.Count; i++)
+        for (int i = 0; i < glist.Count; i++)
         {
-            glist[i].GetComponent<Renderer>().material.color = Color.red;
-            glist[i].transform.position = new Vector3(transform.position.x+i*2, transform.position.y, transform.position.z);
+            if (glist[i].GetComponent<Renderer>().material.color == Color.red)
+            {
+                glist[i].transform.localPosition = new Vector3(transform.position.x + i * 2, transform.position.y, transform.position.z);
+            }
+            if (glist[i].GetComponent<Renderer>().material.color == Color.green)
+            {
+                //glist.Add(GameObject.CreatePrimitive(PrimitiveType.Cube));
+                glist[i].transform.localPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z + i * 2);
+            }
+            if (glist[i].GetComponent<Renderer>().material.color == Color.blue)
+            {
+                //glist.Add(GameObject.CreatePrimitive(PrimitiveType.Cube));
+                glist[i].transform.localPosition = new Vector3(transform.position.x + i * 2, transform.position.y, -transform.position.z + i * 2);
+            }
+            if (glist[i].GetComponent<Renderer>().material.color == Color.white)
+            {
+                Destroy(this);
+            }
         }
-
-        /*GameObject.Find("Cube").GetComponent<Renderer>().material.color = Color.red;
-        GameObject.Find("Cube").transform.position = new Vector3(2f,0f,0f);*/
     }
+    //2nd method
+    /*GameObject.Find("Cube").GetComponent<Renderer>().material.color = Color.red;
+    GameObject.Find("Cube").transform.position = new Vector3(2f,0f,0f);*/
 }

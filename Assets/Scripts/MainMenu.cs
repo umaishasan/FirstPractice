@@ -5,10 +5,8 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject panelAboutUs;
     public GameObject panelHighScore;
-    public GameObject panelSubmenu;
     public bool aboutusPanel;
     public bool scorePanel;
-    public bool submenuPanel;
 
     public void ExitButton()
     {
@@ -26,18 +24,6 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("SubMenu", LoadSceneMode.Single);
         Debug.Log("Sub Menu Open");
-        /*if (submenuPanel)
-        {
-            panelSubmenu.SetActive(true);
-            panelAboutUs.SetActive(false);
-            panelHighScore.SetActive(false);
-        }
-        else
-        {
-            panelSubmenu.SetActive(false);
-            panelAboutUs.SetActive(false);
-            panelHighScore.SetActive(false);
-        }*/
     }
     public void AboutUS()
     {
@@ -46,11 +32,9 @@ public class MainMenu : MonoBehaviour
         {
             panelAboutUs.SetActive(true);
             panelHighScore.SetActive(false);
-            panelSubmenu.SetActive(false);
         }
         else
         {
-            panelSubmenu.SetActive(false);
             panelAboutUs.SetActive(false);
             panelHighScore.SetActive(false);
         }
@@ -62,11 +46,9 @@ public class MainMenu : MonoBehaviour
         {
             panelHighScore.SetActive(true);
             panelAboutUs.SetActive(false);
-            panelSubmenu.SetActive(false);
         }
         else
         {
-            panelSubmenu.SetActive(false);
             panelAboutUs.SetActive(false);
             panelHighScore.SetActive(false);
         }
